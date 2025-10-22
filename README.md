@@ -6,7 +6,7 @@ Ziel dieser Projektarbeit ist es, eine Regelung für einen BLDC-Motor zu erstell
 ## Ideen zur Umsetzung
 Aufbau eines PID-Reglers
 - evtl. mögliche Regelgrößen:
-    - Drehzahl - optisches Feedback durch Graph
+    - Drehzahl - optisches Feedback z.B. durch Graph
     - Drehmoment - haptisches Feedback mit Handrad am Motor
     - Position
     
@@ -22,7 +22,7 @@ Aufbau eines PID-Reglers
     - Drehknöpfe zum Einstellen des Reglers
     - Technik soll sichtbar sein
     - Handrad zum Bremsen oder Drehen des Motors
-- externes Netzteil (24V, Schutzkleinspannung, laienbedienbar)
+- externes Netzteil (24V DC Schutzkleinspannung, laienbedienbar)
 - LCD-Display für Soll- und Ist-Werte
 
 ## Software
