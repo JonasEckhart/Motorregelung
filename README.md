@@ -9,9 +9,31 @@ Aufbau eines PID-Reglers
     - Drehzahl - optisches Feedback z.B. durch Graph
     - Drehmoment - haptisches Feedback mit Handrad am Motor
     - Position
+    - Leistung und Drehzahl wird mit einem Laptop als Graph geplottet
     
 - P-, I- & D-Anteil durch Nutzer einstellbar
     - einstellbar mit Drehencoder oder Potentiometer
+    - 2 
+
+## Erarbeitetes Konzept 
+Modularer Aufbau: Dieser Besteht aus:
+- Steuerungsblock, bestehend aus:
+    - Nucleo, 
+    - Treiberboard und 
+    - Display
+- Motorblock 1: Getriebemotor mit 1/76 untersetzung 
+- Motorblock 2: BLDC-Motor ohne Getriebe
+- Motorblock 3: Getriebemotor mit anderer untersetzung 
+- Drehmomentmessblock: Digitaler Drehmomentsensor
+- Interaktionsblöcke:
+    Diese Definieren den Modus (Drehzahl oder Drehmoment) 
+    - Eine Scheibe zum Anfassen
+    - Eine Miniseilwinde an dessen Seil ein Kraftsensor angebracht werden kann
+    - Eine Scheibe mit LEDs -> Optische Illusion bei Drehzahländerung 
+Diese können aneinander gesteckt werden und werden vom uC erkannt. 
+Ein angeschlossener Laptop Plottet die Drehzahl und aufgenommene Motorleistung in einen Grapen (MatLab oder Python)
+Jedes Modul hat einen EEPROM mit einer Initialisierung, um dies zu erkennen
+
             
 ## Hardware
 - Nucleo-Entwicklungsboard
